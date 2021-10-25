@@ -98,6 +98,7 @@
 					if (this.domains == '') { this.error = true; this.loading = false; return; }
 					let domainStrings = this.domains.split('\n').map(name => name.toLowerCase().trim().replace(" ", "")).filter(e => e).toString();
 					if (domainStrings == '') { this.error = true; this.loading = false; return; }
+					// fetch(`https://your-domain.com/server.php?domains=${domainStrings}&domainexts=${this.domainexts.toString()}`)
 					fetch(`https://quickprox.com.ng/domainsearch/?domains=${domainStrings}&domainexts=${this.domainexts.toString()}`)
 						.then(response => response.text())
 						.then(data => { this.result = this.header + data; this.loading = false; })
