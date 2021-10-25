@@ -1,5 +1,7 @@
 # Bulk Domain Search
-Search bulk domains with your favorite domain extensions
+Search bulk domains with your favorite domain extensions.
+
+**Demo:** https://realvincentuche.github.io/bulk-domain-search/
 
 ## Implementation
 This is built with alpinejs and boostrap 4 calling a server that checks each domain availability.
